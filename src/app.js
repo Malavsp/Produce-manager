@@ -1,6 +1,7 @@
 // Imports
 const express = require("express");
 const bodyParser = require("body-parser");
+const adminRouter = require("./routers/admin");
 
 // Create and configure
 const app = express();
@@ -17,6 +18,8 @@ app.get("/", (req, res) => {
 app.get("/error", (req, res) => {
   throw new Error("Something has gone terribly wrong....");
 });
+
+app.use("/admin", adminRouter);
 
 // Error Handling
 // Unknown Request handler
