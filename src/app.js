@@ -2,6 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const adminRouter = require("./routers/admin");
+const produceRouter = require("./routers/produce");
 
 // Create and configure
 const app = express();
@@ -19,6 +20,7 @@ app.get("/error", (req, res) => {
   throw new Error("Something has gone terribly wrong....");
 });
 
+app.use("/produce", produceRouter);
 app.use("/admin", adminRouter);
 
 // Error Handling
