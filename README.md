@@ -1,4 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/l4WXNqvu)
 
 # Produce Manager For Supermarket
 This is a Fruit and Vegetables managing system which works on **PLU Code** where you can get Information _(name, price and many more)_  about produce by typing the code ***,*** add new produce product ***,*** delete a produce  ***or***  get a whole list of produces. 
